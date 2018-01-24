@@ -1,0 +1,32 @@
+.menu__link {
+font-family: ;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'ubuntulight';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.menu {
+    display: flex;
+    width: 510px;
+    justify-content: space-around;
+
+}
+.menu__item {
+    color: #ffffff;
+
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    width: 73%;
+
+
+}
+.menu__item:nth-child(1) {
+    list-style: none;
+
+}

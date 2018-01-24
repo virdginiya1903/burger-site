@@ -1,0 +1,25 @@
+.button {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'ubuntulight';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    width: 97px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #e45028;
+}
+.button__buy {
+    background-color: #e45028;
+
+}
+.button__info {
+    background-color:#2f3234;
+    padding-top: 5px;
+}
+.button__info:hover {
+    background-color: #2f3234;
+}
+
