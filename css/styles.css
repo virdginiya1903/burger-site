@@ -514,6 +514,13 @@ li {
   padding: 0;
   border: 0; }
 
+.map {
+  background: url("../img/map.jpg") no-repeat center center;
+  background-size: cover; }
+
+ul {
+  padding: 0; }
+
 .logo__link {
   display: block; }
 
@@ -532,7 +539,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 510px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -601,6 +607,13 @@ li {
   .button--gray:hover {
     background-color: #1e2021; }
 
+.form__reset {
+  background-color: transparent;
+  border: none;
+  font-family: 'ubuntulight';
+  color: #fff;
+  margin-left: 15px; }
+
 .content-hello__img-wrapper {
   /* background: url(../img/icons/drops.svg) no-repeat center; */
   width: 50%;
@@ -664,12 +677,6 @@ li {
   -webkit-transform: translate(5px);
   -ms-transform: translate(5px);
   transform: translate(5px); }
-
-.form__reset {
-  background-color: transparent;
-  border: none;
-  font-family: 'ubuntulight';
-  color: #fff; }
 
 .features {
   list-style: none;
@@ -999,6 +1006,38 @@ li {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
+.title--white {
+  color: #fff; }
+
+.menu-bar__content {
+  width: 0;
+  overflow: hidden;
+  background-color: rgba(47, 50, 52, 0.93); }
+
+.menu-bar__item--active .menu-bar__content {
+  width: 50%; }
+
+.menu-bar__accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%; }
+
+.menu-bar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.title--white {
+  position: absolute; }
+
 .form__row {
   margin-bottom: 18px;
   display: -webkit-box;
@@ -1015,7 +1054,7 @@ li {
   align-self: baseline; }
 
 .form__input {
-  padding: 12px;
+  padding: 7px;
   background: #fff;
   border: transparent 2px solid;
   border-radius: 5px;
@@ -1081,7 +1120,7 @@ li {
 
 .form__radio:not(checked) + label {
   position: relative;
-  padding: 0 0 0 25px; }
+  padding: 0 15px 0 25px; }
 
 .form__radio:not(checked) + label:before {
   content: '';
@@ -1173,5 +1212,40 @@ li {
   text-align: center;
   -ms-flex-item-align: baseline;
   align-self: baseline; }
+
+.form__row--textarea {
+  margin-bottom: 10px; }
+
+.footer {
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../img/Rectangle9.jpg"); }
+
+.map {
+  position: relative; }
+
+.address__location {
+  font-family: 'ubuntulight';
+  font-size: 14px;
+  font-style: normal;
+  color: #fff;
+  text-align: left; }
+
+.address__phone {
+  font-family: 'ubuntubold';
+  font-size: 14px;
+  font-style: normal;
+  color: #e35028;
+  text-align: left; }
+  .address__phone:before {
+    background: url("../img/icons/phone.svg") no-repeat;
+    width: 12px;
+    height: 11px;
+    display: inline-block;
+    content: "";
+    margin-right: 5px; }
 
 /*# sourceMappingURL=styles.css.map */
