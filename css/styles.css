@@ -516,7 +516,8 @@ li {
 
 .map {
   background: url("../img/map.jpg") no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
 
 ul {
   padding: 0; }
@@ -1014,9 +1015,6 @@ ul {
   overflow: hidden;
   background-color: rgba(47, 50, 52, 0.93); }
 
-.menu-bar__item--active .menu-bar__content {
-  width: 50%; }
-
 .menu-bar__accordion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1036,7 +1034,12 @@ ul {
   justify-content: flex-end; }
 
 .title--white {
-  position: absolute; }
+  position: absolute;
+  left: 94px;
+  top: 111px; }
+
+.menu-bar__title {
+  width: 80px; }
 
 .form__row {
   margin-bottom: 18px;
