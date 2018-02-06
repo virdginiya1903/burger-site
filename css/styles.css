@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*# sourceMappingURL=styles.css.map */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -635,6 +636,11 @@ ul {
   background-color: #2f3234; }
   .button--gray:hover {
     background-color: #1e2021; }
+  .button--gray:after {
+    content: 'Подробнее'; }
+  @media screen and (max-width: 480px) {
+    .button--gray:after {
+      content: 'Читать отзыв'; } }
 
 .form__reset {
   background-color: transparent;
@@ -927,9 +933,12 @@ ul {
   margin-bottom: 0.625rem; }
   @media screen and (max-width: 768px) {
     .reviews__title {
-      margin-bottom: 0;
       padding-top: 0;
-      text-align: center; } }
+      text-align: center;
+      margin-bottom: 1.875rem; } }
+  @media screen and (max-width: 480px) {
+    .reviews__title {
+      font-size: 1.5rem; } }
 
 .reviews__disc {
   color: #fff;
@@ -942,6 +951,9 @@ ul {
   @media screen and (max-width: 768px) {
     .reviews__disc {
       text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .reviews__disc {
+      display: none; } }
 
 .reviews__disc-wrap {
   visibility: hidden;
@@ -955,6 +967,9 @@ ul {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; } }
+  @media screen and (max-width: 480px) {
+    .reviews__disc-wrap {
+      padding-top: 2.8125rem; } }
 
 .reviews__content:hover .reviews__disc-wrap {
   visibility: visible; }
@@ -1148,6 +1163,9 @@ ul {
   background-position: center; }
   .menu-bar__link:hover .menu-bar__title {
     color: #f9b43b; }
+  @media screen and (max-width: 480px) {
+    .menu-bar__link {
+      width: 3rem; } }
 
 .title--white {
   color: #fff; }
@@ -1220,6 +1238,11 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .form__row {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .form {
   color: #fff;
@@ -1266,6 +1289,9 @@ ul {
     .form__row-wrapper {
       margin-right: 0;
       width: 65%; } }
+  @media screen and (max-width: 480px) {
+    .form__row-wrapper {
+      width: 95%; } }
 
 .form__textarea {
   width: 100%;
@@ -1279,7 +1305,8 @@ ul {
     outline: none; }
 
 .form__title {
-  text-align: left; }
+  text-align: left;
+  font-size: 0.875rem; }
 
 .form {
   font-family: 'ubuntulight';
@@ -1403,9 +1430,16 @@ ul {
   text-align: center;
   -ms-flex-item-align: baseline;
   align-self: baseline; }
+  @media screen and (max-width: 480px) {
+    .title--form {
+      white-space: normal;
+      font-size: 3.125rem; } }
 
 .form__row--textarea {
   margin-bottom: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .form__row--textarea {
+      margin-bottom: 2.5rem; } }
 
 .footer {
   height: 3.75rem;
@@ -1417,6 +1451,13 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 7.25rem; } }
 
 .map {
   position: relative; }
@@ -1427,6 +1468,9 @@ ul {
   font-style: normal;
   color: #fff;
   text-align: left; }
+  @media screen and (max-width: 480px) {
+    .address__location {
+      text-align: center; } }
 
 .address__phone {
   font-family: 'ubuntubold';
@@ -1442,15 +1486,36 @@ ul {
     display: inline-block;
     content: "";
     margin-right: 0.3125rem; }
+  @media screen and (max-width: 480px) {
+    .address__phone {
+      text-align: center; } }
 
 .container--footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .container--footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .address {
   width: 50%; }
+  @media screen and (max-width: 480px) {
+    .address {
+      width: 100%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .socials {
   width: 50%;
@@ -1471,6 +1536,12 @@ ul {
   -ms-flex-pack: end;
   justify-content: flex-end;
   margin-top: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .socials {
+      width: 100%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .socials__item {
   display: inline-block;
