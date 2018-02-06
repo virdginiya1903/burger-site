@@ -650,6 +650,9 @@ ul {
     .content-hello__img-wrapper {
       width: 22.875rem;
       padding-left: 0; } }
+  @media screen and (max-width: 480px) {
+    .content-hello__img-wrapper {
+      width: 75%; } }
 
 .content-hello__img {
   margin-bottom: 4.375rem;
@@ -661,6 +664,9 @@ ul {
 .scroll__link {
   margin-top: 1.75rem;
   display: block; }
+  @media screen and (max-width: 480px) {
+    .scroll__link {
+      margin-top: 0; } }
 
 .title {
   font-family: 'gagalinregular';
@@ -675,6 +681,9 @@ ul {
     .title {
       white-space: nowrap;
       text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 3.9375rem; } }
 
 .subtitle {
   font-family: 'lifehackmedium';
@@ -689,6 +698,9 @@ ul {
     .subtitle {
       text-align: center;
       padding-top: 0; } }
+  @media screen and (max-width: 480px) {
+    .subtitle {
+      font-size: 3.375rem; } }
 
 .content-hello {
   display: -webkit-box;
@@ -712,6 +724,9 @@ ul {
       margin-top: 0;
       text-align: center;
       width: 80%; } }
+  @media screen and (max-width: 480px) {
+    .content-hello__title {
+      width: 90%; } }
 
 .scroll {
   height: 5.0625rem; }
@@ -753,6 +768,13 @@ ul {
   -ms-flex-item-align: baseline;
   align-self: baseline;
   padding-top: 1.875rem; }
+  @media screen and (max-width: 480px) {
+    .features {
+      padding-top: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .container--center {
   display: -webkit-box;
@@ -782,6 +804,9 @@ ul {
   font-family: 'lifehackmedium';
   margin-top: 2.1875rem;
   display: block; }
+  @media screen and (max-width: 480px) {
+    .features__title {
+      margin-top: 0; } }
 
 .features__text {
   font-family: 'ubuntulight';
@@ -794,7 +819,7 @@ ul {
   margin-top: 0.625rem; }
 
 .features__item {
-  width: 33.3%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,6 +833,12 @@ ul {
   padding-left: 0.625rem;
   -ms-flex-item-align: baseline;
   align-self: baseline; }
+  @media screen and (max-width: 480px) {
+    .features__item {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
 
 .title--black {
   color: #2f3234;
@@ -825,6 +856,16 @@ ul {
   -ms-flex-item-align: baseline;
   align-self: baseline;
   margin-bottom: 3.4375rem; }
+
+@media screen and (max-width: 480px) {
+  .features__text-wrap {
+    text-align: left;
+    width: 70%;
+    padding-left: 10px; } }
+
+@media screen and (max-width: 480px) {
+  .features__img-wrap {
+    width: 27%; } }
 
 .reviews {
   list-style: none;
@@ -1170,6 +1211,9 @@ ul {
   @media screen and (max-width: 768px) {
     .menu-bar__title {
       bottom: 2.5rem; } }
+
+.menu-bar__item--active .menu-bar__content {
+  width: 33.75rem; }
 
 .form__row {
   margin-bottom: 1.125rem;
